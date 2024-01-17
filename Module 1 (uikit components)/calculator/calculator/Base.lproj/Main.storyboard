@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PZG-Yk-gwp">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6K-Rl-cdm">
+                                <rect key="frame" x="79" y="60" width="694" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="labelColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="245" verticalCompressionResistancePriority="746" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="hcw-IO-cdf">
+                                <rect key="frame" x="79" y="110" width="694" height="262"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-Ha-PTQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Urw-Ii-9qT">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h82-9G-xhH">
+                                                        <rect key="frame" x="28.999999999999996" y="13.66666666666667" width="6.3333333333333321" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="h82-9G-xhH" firstAttribute="centerY" secondItem="Urw-Ii-9qT" secondAttribute="centerY" id="kvp-td-eUE"/>
+                                                    <constraint firstItem="h82-9G-xhH" firstAttribute="centerX" secondItem="Urw-Ii-9qT" secondAttribute="centerX" id="n1l-V5-iVa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sa1-ai-wF3">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2ⁿᵈ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIY-8S-PWH">
+                                                        <rect key="frame" x="20.333333333333329" y="13.666666666666684" width="23.333333333333329" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="rIY-8S-PWH" firstAttribute="centerX" secondItem="Sa1-ai-wF3" secondAttribute="centerX" id="NjX-Iv-Qwl"/>
+                                                    <constraint firstItem="rIY-8S-PWH" firstAttribute="centerY" secondItem="Sa1-ai-wF3" secondAttribute="centerY" id="hFp-B5-2ta"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISt-bG-Bdl">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zde-kw-s9F">
+                                                        <rect key="frame" x="21.666666666666671" y="13.666666666666655" width="21" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="zde-kw-s9F" firstAttribute="centerY" secondItem="ISt-bG-Bdl" secondAttribute="centerY" id="4jD-Zr-poy"/>
+                                                    <constraint firstItem="zde-kw-s9F" firstAttribute="centerX" secondItem="ISt-bG-Bdl" secondAttribute="centerX" id="FUJ-Oc-10b"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oI-NF-R2q">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSG-Va-d3S">
+                                                        <rect key="frame" x="25.333333333333332" y="13.666666666666627" width="13.666666666666668" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="MSG-Va-d3S" firstAttribute="centerX" secondItem="7oI-NF-R2q" secondAttribute="centerX" id="RSD-Rm-PHn"/>
+                                                    <constraint firstItem="MSG-Va-d3S" firstAttribute="centerY" secondItem="7oI-NF-R2q" secondAttribute="centerY" id="z0a-nR-YWk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRB-Aw-xbV">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQN-fz-TDw">
+                                                        <rect key="frame" x="17.333333333333329" y="13.666666666666684" width="29.666666666666671" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="ZQN-fz-TDw" firstAttribute="centerX" secondItem="DRB-Aw-xbV" secondAttribute="centerX" id="CnT-Il-YNV"/>
+                                                    <constraint firstItem="ZQN-fz-TDw" firstAttribute="centerY" secondItem="DRB-Aw-xbV" secondAttribute="centerY" id="hbw-xg-h9l"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9QV-RD-gXE">
+                                        <rect key="frame" x="70" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p37-Un-Ots">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=")" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoa-6a-jGd">
+                                                        <rect key="frame" x="28.999999999999996" y="13.66666666666667" width="6.3333333333333321" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Eoa-6a-jGd" firstAttribute="centerX" secondItem="p37-Un-Ots" secondAttribute="centerX" id="1vl-bj-UOc"/>
+                                                    <constraint firstItem="Eoa-6a-jGd" firstAttribute="centerY" secondItem="p37-Un-Ots" secondAttribute="centerY" id="FLq-3I-cfd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeM-3z-IrA">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x²" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1U-AP-QUS">
+                                                        <rect key="frame" x="25" y="13.666666666666684" width="14" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="w1U-AP-QUS" firstAttribute="centerY" secondItem="XeM-3z-IrA" secondAttribute="centerY" id="JLS-nB-Ubt"/>
+                                                    <constraint firstItem="w1U-AP-QUS" firstAttribute="centerX" secondItem="XeM-3z-IrA" secondAttribute="centerX" id="xy1-9K-DWN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGq-wU-Btw">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="²√x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09c-3G-6rN">
+                                                        <rect key="frame" x="22" y="13.666666666666655" width="20" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="09c-3G-6rN" firstAttribute="centerX" secondItem="dGq-wU-Btw" secondAttribute="centerX" id="JxY-YS-xI1"/>
+                                                    <constraint firstItem="09c-3G-6rN" firstAttribute="centerY" secondItem="dGq-wU-Btw" secondAttribute="centerY" id="YXu-zL-PHD"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqC-zT-fay">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh3-wm-P0Y">
+                                                        <rect key="frame" x="21" y="13.666666666666627" width="22" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Kh3-wm-P0Y" firstAttribute="centerX" secondItem="wqC-zT-fay" secondAttribute="centerX" id="9F2-5Z-LQp"/>
+                                                    <constraint firstItem="Kh3-wm-P0Y" firstAttribute="centerY" secondItem="wqC-zT-fay" secondAttribute="centerY" id="qm8-tT-AZI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SkM-KZ-qA3">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sinh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2d-jI-SMd">
+                                                        <rect key="frame" x="16.333333333333343" y="13.666666666666684" width="31.333333333333329" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="A2d-jI-SMd" firstAttribute="centerX" secondItem="SkM-KZ-qA3" secondAttribute="centerX" id="MwY-no-OCV"/>
+                                                    <constraint firstItem="A2d-jI-SMd" firstAttribute="centerY" secondItem="SkM-KZ-qA3" secondAttribute="centerY" id="sK8-nx-Q0h"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Avz-7Q-F4K">
+                                        <rect key="frame" x="140" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1H-6V-Ye5">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-Q0-5Li">
+                                                        <rect key="frame" x="20.333333333333343" y="13.66666666666667" width="23.666666666666671" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Pye-Q0-5Li" firstAttribute="centerX" secondItem="b1H-6V-Ye5" secondAttribute="centerX" id="501-lH-Mza"/>
+                                                    <constraint firstItem="Pye-Q0-5Li" firstAttribute="centerY" secondItem="b1H-6V-Ye5" secondAttribute="centerY" id="bir-C5-qg2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vc-RH-Pvn">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x³" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8Y-4I-PhK">
+                                                        <rect key="frame" x="24.999999999999996" y="13.666666666666684" width="14.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="E8Y-4I-PhK" firstAttribute="centerY" secondItem="8vc-RH-Pvn" secondAttribute="centerY" id="OFO-q4-3dv"/>
+                                                    <constraint firstItem="E8Y-4I-PhK" firstAttribute="centerX" secondItem="8vc-RH-Pvn" secondAttribute="centerX" id="VPy-uL-wTy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PV0-gf-Loe">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="³√x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ams-kc-vGr">
+                                                        <rect key="frame" x="22" y="13.666666666666655" width="20" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="ams-kc-vGr" firstAttribute="centerY" secondItem="PV0-gf-Loe" secondAttribute="centerY" id="ocb-XX-qAK"/>
+                                                    <constraint firstItem="ams-kc-vGr" firstAttribute="centerX" secondItem="PV0-gf-Loe" secondAttribute="centerX" id="ofs-NI-b24"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1E7-S5-zHo">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcK-c5-qnn">
+                                                        <rect key="frame" x="18.333333333333343" y="13.666666666666627" width="27.333333333333329" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="hcK-c5-qnn" firstAttribute="centerY" secondItem="1E7-S5-zHo" secondAttribute="centerY" id="CYm-tn-2Zw"/>
+                                                    <constraint firstItem="hcK-c5-qnn" firstAttribute="centerX" secondItem="1E7-S5-zHo" secondAttribute="centerX" id="kxf-Pm-7mB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vz5-kC-Lcz">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cosh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTi-Cx-CKe">
+                                                        <rect key="frame" x="13.666666666666657" y="13.666666666666684" width="37" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="qTi-Cx-CKe" firstAttribute="centerX" secondItem="Vz5-kC-Lcz" secondAttribute="centerX" id="dQr-fD-KaJ"/>
+                                                    <constraint firstItem="qTi-Cx-CKe" firstAttribute="centerY" secondItem="Vz5-kC-Lcz" secondAttribute="centerY" id="q0W-6o-k7I"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4GZ-BM-e9Z">
+                                        <rect key="frame" x="210" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNE-SL-eju">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmh-OC-csD">
+                                                        <rect key="frame" x="19.666666666666686" y="13.66666666666667" width="24.666666666666671" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Vmh-OC-csD" firstAttribute="centerY" secondItem="MNE-SL-eju" secondAttribute="centerY" id="Ww0-z1-0QY"/>
+                                                    <constraint firstItem="Vmh-OC-csD" firstAttribute="centerX" secondItem="MNE-SL-eju" secondAttribute="centerX" id="oR3-zQ-Cq1"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwx-Z4-WiR">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xʸ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTQ-qI-q7X">
+                                                        <rect key="frame" x="24.666666666666689" y="13.666666666666684" width="14.666666666666668" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="JTQ-qI-q7X" firstAttribute="centerX" secondItem="Vwx-Z4-WiR" secondAttribute="centerX" id="wrq-40-cwE"/>
+                                                    <constraint firstItem="JTQ-qI-q7X" firstAttribute="centerY" secondItem="Vwx-Z4-WiR" secondAttribute="centerY" id="ySX-f7-lrD"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAF-M7-QDm">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ʸ√x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0B-nz-XHd">
+                                                        <rect key="frame" x="19" y="13.666666666666655" width="26" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="s0B-nz-XHd" firstAttribute="centerY" secondItem="hAF-M7-QDm" secondAttribute="centerY" id="pPn-Pt-e2P"/>
+                                                    <constraint firstItem="s0B-nz-XHd" firstAttribute="centerX" secondItem="hAF-M7-QDm" secondAttribute="centerX" id="pbF-6h-Vf2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkd-il-QjT">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXx-Vv-7Nw">
+                                                        <rect key="frame" x="20" y="13.666666666666627" width="24.333333333333329" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="WXx-Vv-7Nw" firstAttribute="centerX" secondItem="jkd-il-QjT" secondAttribute="centerX" id="my7-qQ-88C"/>
+                                                    <constraint firstItem="WXx-Vv-7Nw" firstAttribute="centerY" secondItem="jkd-il-QjT" secondAttribute="centerY" id="pQG-bs-x36"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lh2-9E-sBY">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tanh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr6-Wf-LGj">
+                                                        <rect key="frame" x="15" y="13.666666666666684" width="34" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="wr6-Wf-LGj" firstAttribute="centerY" secondItem="lh2-9E-sBY" secondAttribute="centerY" id="4ZC-og-QH6"/>
+                                                    <constraint firstItem="wr6-Wf-LGj" firstAttribute="centerX" secondItem="lh2-9E-sBY" secondAttribute="centerX" id="j8n-IL-hR4"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="g3R-iO-jre">
+                                        <rect key="frame" x="280" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLR-UJ-zsK">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbR-PA-Nvg">
+                                                        <rect key="frame" x="21" y="13.66666666666667" width="22" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="VbR-PA-Nvg" firstAttribute="centerY" secondItem="sLR-UJ-zsK" secondAttribute="centerY" id="Jcl-TB-N2N"/>
+                                                    <constraint firstItem="VbR-PA-Nvg" firstAttribute="centerX" secondItem="sLR-UJ-zsK" secondAttribute="centerX" id="irK-Gt-mWK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bA5-kp-zfo">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eˣ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFR-du-0aK">
+                                                        <rect key="frame" x="25.333333333333318" y="13.666666666666684" width="13.666666666666668" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="SFR-du-0aK" firstAttribute="centerX" secondItem="bA5-kp-zfo" secondAttribute="centerX" id="JIF-uL-vRO"/>
+                                                    <constraint firstItem="SFR-du-0aK" firstAttribute="centerY" secondItem="bA5-kp-zfo" secondAttribute="centerY" id="UiD-dl-X6d"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIM-mr-cx8">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ln" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-fd-09b">
+                                                        <rect key="frame" x="25.333333333333318" y="13.666666666666655" width="13.666666666666668" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="QiN-fd-09b" firstAttribute="centerX" secondItem="oIM-mr-cx8" secondAttribute="centerX" id="ThZ-zj-wf7"/>
+                                                    <constraint firstItem="QiN-fd-09b" firstAttribute="centerY" secondItem="oIM-mr-cx8" secondAttribute="centerY" id="WFH-jl-mFU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezN-Xd-noZ">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDg-EL-uuN">
+                                                        <rect key="frame" x="27.333333333333314" y="13.666666666666627" width="9.3333333333333357" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="eDg-EL-uuN" firstAttribute="centerY" secondItem="ezN-Xd-noZ" secondAttribute="centerY" id="TDI-LR-RBz"/>
+                                                    <constraint firstItem="eDg-EL-uuN" firstAttribute="centerX" secondItem="ezN-Xd-noZ" secondAttribute="centerX" id="hP9-Cu-t3G"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBQ-Vr-g7S">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="π" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8D-1p-U0I">
+                                                        <rect key="frame" x="26.666666666666686" y="13.666666666666684" width="11" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="s8D-1p-U0I" firstAttribute="centerY" secondItem="uBQ-Vr-g7S" secondAttribute="centerY" id="e7h-Oc-EKC"/>
+                                                    <constraint firstItem="s8D-1p-U0I" firstAttribute="centerX" secondItem="uBQ-Vr-g7S" secondAttribute="centerX" id="sa1-ZU-ydm"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fGW-6v-7Ie">
+                                        <rect key="frame" x="350" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZL-jK-9Jb">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0E-ll-Buo">
+                                                        <rect key="frame" x="21.666666666666686" y="13.66666666666667" width="20.666666666666671" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="g0E-ll-Buo" firstAttribute="centerX" secondItem="JZL-jK-9Jb" secondAttribute="centerX" id="Hby-pO-y9Z"/>
+                                                    <constraint firstItem="g0E-ll-Buo" firstAttribute="centerY" secondItem="JZL-jK-9Jb" secondAttribute="centerY" id="ouf-lI-cpM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJP-gA-WCf">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10ˣ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P25-nZ-MhQ">
+                                                        <rect key="frame" x="21" y="13.666666666666684" width="22" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="P25-nZ-MhQ" firstAttribute="centerY" secondItem="CJP-gA-WCf" secondAttribute="centerY" id="Czq-vy-535"/>
+                                                    <constraint firstItem="P25-nZ-MhQ" firstAttribute="centerX" secondItem="CJP-gA-WCf" secondAttribute="centerX" id="ciF-1e-RtN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLT-JJ-Nop">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="log₁₀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWS-xR-4pT">
+                                                        <rect key="frame" x="15.333333333333314" y="13.666666666666655" width="33.333333333333336" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="kWS-xR-4pT" firstAttribute="centerX" secondItem="uLT-JJ-Nop" secondAttribute="centerX" id="sMM-5u-Vqq"/>
+                                                    <constraint firstItem="kWS-xR-4pT" firstAttribute="centerY" secondItem="uLT-JJ-Nop" secondAttribute="centerY" id="taH-8A-R3h"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfF-Ag-ERB">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74t-vB-wd3">
+                                                        <rect key="frame" x="22.333333333333314" y="13.666666666666627" width="19.666666666666671" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="74t-vB-wd3" firstAttribute="centerY" secondItem="OfF-Ag-ERB" secondAttribute="centerY" id="KUJ-Sk-JyS"/>
+                                                    <constraint firstItem="74t-vB-wd3" firstAttribute="centerX" secondItem="OfF-Ag-ERB" secondAttribute="centerX" id="jz4-HH-B9C"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfH-IJ-rW9">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeZ-12-3yw">
+                                                        <rect key="frame" x="12.333333333333314" y="13.666666666666684" width="39.333333333333336" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ScientificCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="VeZ-12-3yw" firstAttribute="centerX" secondItem="KfH-IJ-rW9" secondAttribute="centerX" id="6cE-94-LLO"/>
+                                                    <constraint firstItem="VeZ-12-3yw" firstAttribute="centerY" secondItem="KfH-IJ-rW9" secondAttribute="centerY" id="phk-m5-x96"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Y3s-d5-WMX">
+                                        <rect key="frame" x="420" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUm-J6-NFT">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lz-PA-KRt">
+                                                        <rect key="frame" x="21" y="13.66666666666667" width="22.333333333333329" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="SpecialCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="7Lz-PA-KRt" firstAttribute="centerX" secondItem="cUm-J6-NFT" secondAttribute="centerX" id="8FJ-DC-qk0"/>
+                                                    <constraint firstItem="7Lz-PA-KRt" firstAttribute="centerY" secondItem="cUm-J6-NFT" secondAttribute="centerY" id="UkC-N6-cID"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LjO-cf-Oi0">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyN-49-f5a">
+                                                        <rect key="frame" x="27.333333333333368" y="13.666666666666684" width="9.3333333333333321" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="ZyN-49-f5a" firstAttribute="centerX" secondItem="LjO-cf-Oi0" secondAttribute="centerX" id="HYg-P1-xiD"/>
+                                                    <constraint firstItem="ZyN-49-f5a" firstAttribute="centerY" secondItem="LjO-cf-Oi0" secondAttribute="centerY" id="ICs-Vu-thn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJp-i9-R23">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykF-9T-8k1">
+                                                        <rect key="frame" x="26.666666666666629" y="13.666666666666655" width="10.666666666666664" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="ykF-9T-8k1" firstAttribute="centerY" secondItem="KJp-i9-R23" secondAttribute="centerY" id="eag-9X-n7V"/>
+                                                    <constraint firstItem="ykF-9T-8k1" firstAttribute="centerX" secondItem="KJp-i9-R23" secondAttribute="centerX" id="xiI-cw-Dtx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeP-q0-ber">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTz-X5-9ag">
+                                                        <rect key="frame" x="28.333333333333375" y="13.666666666666627" width="7.6666666666666679" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="tTz-X5-9ag" firstAttribute="centerY" secondItem="YeP-q0-ber" secondAttribute="centerY" id="CgQ-80-SP7"/>
+                                                    <constraint firstItem="tTz-X5-9ag" firstAttribute="centerX" secondItem="YeP-q0-ber" secondAttribute="centerX" id="E0G-Wb-3LL"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbe-jx-JbZ">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3K-ue-TYI">
+                                                        <rect key="frame" x="26.999999999999996" y="13.666666666666684" width="10.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="g3K-ue-TYI" firstAttribute="centerX" secondItem="Dbe-jx-JbZ" secondAttribute="centerX" id="6Xb-go-PYS"/>
+                                                    <constraint firstItem="g3K-ue-TYI" firstAttribute="centerY" secondItem="Dbe-jx-JbZ" secondAttribute="centerY" id="olv-hH-VFb"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="uut-WX-oNy">
+                                        <rect key="frame" x="490" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-v0-KNe">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUu-Gi-8ew">
+                                                        <rect key="frame" x="20.666666666666629" y="13.66666666666667" width="22.666666666666671" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="SpecialCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="pUu-Gi-8ew" firstAttribute="centerX" secondItem="ZbX-v0-KNe" secondAttribute="centerX" id="Nv0-vj-4Ix"/>
+                                                    <constraint firstItem="pUu-Gi-8ew" firstAttribute="centerY" secondItem="ZbX-v0-KNe" secondAttribute="centerY" id="QyB-Jo-aAH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beu-fe-4ea">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bz-sj-qsg">
+                                                        <rect key="frame" x="26.666666666666629" y="13.666666666666684" width="10.666666666666664" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="9Bz-sj-qsg" firstAttribute="centerY" secondItem="beu-fe-4ea" secondAttribute="centerY" id="1va-Xq-NJ6"/>
+                                                    <constraint firstItem="9Bz-sj-qsg" firstAttribute="centerX" secondItem="beu-fe-4ea" secondAttribute="centerX" id="WmZ-Me-dDH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-Wi-l8o">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMQ-9Z-Gba">
+                                                        <rect key="frame" x="26.999999999999996" y="13.666666666666655" width="10.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="tMQ-9Z-Gba" firstAttribute="centerX" secondItem="3hh-Wi-l8o" secondAttribute="centerX" id="6tl-GB-HE2"/>
+                                                    <constraint firstItem="tMQ-9Z-Gba" firstAttribute="centerY" secondItem="3hh-Wi-l8o" secondAttribute="centerY" id="XOG-tx-hHc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xko-Tf-Bu8">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj6-ry-ZPR">
+                                                        <rect key="frame" x="27" y="13.666666666666627" width="10" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Qj6-ry-ZPR" firstAttribute="centerY" secondItem="Xko-Tf-Bu8" secondAttribute="centerY" id="1Gw-3O-NMl"/>
+                                                    <constraint firstItem="Qj6-ry-ZPR" firstAttribute="centerX" secondItem="Xko-Tf-Bu8" secondAttribute="centerX" id="heQ-2L-fyd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ww1-kr-bs4">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwz-ic-lGg">
+                                                        <rect key="frame" x="11.333333333333375" y="13.666666666666684" width="41.333333333333343" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="vwz-ic-lGg" firstAttribute="centerY" secondItem="ww1-kr-bs4" secondAttribute="centerY" id="f0G-ac-aPY"/>
+                                                    <constraint firstItem="vwz-ic-lGg" firstAttribute="centerX" secondItem="ww1-kr-bs4" secondAttribute="centerX" id="oqC-AY-H5S"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="0ur-Wp-f4W">
+                                        <rect key="frame" x="560" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyu-dm-VpQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weL-D7-38T">
+                                                        <rect key="frame" x="24.333333333333368" y="13.66666666666667" width="15.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="SpecialCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="weL-D7-38T" firstAttribute="centerX" secondItem="Jyu-dm-VpQ" secondAttribute="centerX" id="PvO-by-eHO"/>
+                                                    <constraint firstItem="weL-D7-38T" firstAttribute="centerY" secondItem="Jyu-dm-VpQ" secondAttribute="centerY" id="Teh-Sp-BEE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22y-SW-vMn">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIl-ut-pj8">
+                                                        <rect key="frame" x="26.666666666666629" y="13.666666666666684" width="10.666666666666664" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="PIl-ut-pj8" firstAttribute="centerX" secondItem="22y-SW-vMn" secondAttribute="centerX" id="aZj-xk-HYd"/>
+                                                    <constraint firstItem="PIl-ut-pj8" firstAttribute="centerY" secondItem="22y-SW-vMn" secondAttribute="centerY" id="gl0-6o-3e8"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88X-eR-nJx">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUa-tp-MbG">
+                                                        <rect key="frame" x="26.666666666666629" y="13.666666666666655" width="10.666666666666664" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="dUa-tp-MbG" firstAttribute="centerY" secondItem="88X-eR-nJx" secondAttribute="centerY" id="0rY-gK-ovQ"/>
+                                                    <constraint firstItem="dUa-tp-MbG" firstAttribute="centerX" secondItem="88X-eR-nJx" secondAttribute="centerX" id="MSn-Yb-ttm"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2L-ef-1I0">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpt-lp-KC8">
+                                                        <rect key="frame" x="26.999999999999996" y="13.666666666666627" width="10.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Tpt-lp-KC8" firstAttribute="centerX" secondItem="Z2L-ef-1I0" secondAttribute="centerX" id="0sA-5k-YCP"/>
+                                                    <constraint firstItem="Tpt-lp-KC8" firstAttribute="centerY" secondItem="Z2L-ef-1I0" secondAttribute="centerY" id="6Cr-Vg-9H2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-Ke-Q5a">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoJ-lM-G2E">
+                                                        <rect key="frame" x="29.666666666666629" y="13.666666666666684" width="4.6666666666666643" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="CellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="uoJ-lM-G2E" firstAttribute="centerY" secondItem="jYz-Ke-Q5a" secondAttribute="centerY" id="hrd-au-adm"/>
+                                                    <constraint firstItem="uoJ-lM-G2E" firstAttribute="centerX" secondItem="jYz-Ke-Q5a" secondAttribute="centerX" id="qlZ-ar-Iny"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Rxf-xp-QHO">
+                                        <rect key="frame" x="630" y="0.0" width="64" height="262"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yE-I6-x5I">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="47.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="÷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U08-oo-f1t">
+                                                        <rect key="frame" x="26.999999999999996" y="13.66666666666667" width="10.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="OperationColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="U08-oo-f1t" firstAttribute="centerY" secondItem="9yE-I6-x5I" secondAttribute="centerY" id="A3d-2s-4Tb"/>
+                                                    <constraint firstItem="U08-oo-f1t" firstAttribute="centerX" secondItem="9yE-I6-x5I" secondAttribute="centerX" id="G6d-yT-SNN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpS-DQ-VDM">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="×" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0G-Ab-tk4">
+                                                        <rect key="frame" x="26.999999999999996" y="13.666666666666684" width="10.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="OperationColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="B0G-Ab-tk4" firstAttribute="centerX" secondItem="hpS-DQ-VDM" secondAttribute="centerX" id="5Dz-k7-DTN"/>
+                                                    <constraint firstItem="B0G-Ab-tk4" firstAttribute="centerY" secondItem="hpS-DQ-VDM" secondAttribute="centerY" id="AeX-4G-h7O"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ptb-d7-luG">
+                                                <rect key="frame" x="0.0" y="107.33333333333333" width="64" height="47.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="−" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pd-Kv-uq3">
+                                                        <rect key="frame" x="26.999999999999996" y="13.666666666666655" width="10.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="OperationColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="4Pd-Kv-uq3" firstAttribute="centerY" secondItem="Ptb-d7-luG" secondAttribute="centerY" id="ogo-eh-nvl"/>
+                                                    <constraint firstItem="4Pd-Kv-uq3" firstAttribute="centerX" secondItem="Ptb-d7-luG" secondAttribute="centerX" id="rP0-gf-imG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGS-Sv-54K">
+                                                <rect key="frame" x="0.0" y="160.66666666666669" width="64" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnv-Sc-Waj">
+                                                        <rect key="frame" x="26.999999999999996" y="13.666666666666627" width="10.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="OperationColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Jnv-Sc-Waj" firstAttribute="centerX" secondItem="xGS-Sv-54K" secondAttribute="centerX" id="2WJ-Aq-Na3"/>
+                                                    <constraint firstItem="Jnv-Sc-Waj" firstAttribute="centerY" secondItem="xGS-Sv-54K" secondAttribute="centerY" id="SEX-0v-vWU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-eI-Dgy">
+                                                <rect key="frame" x="0.0" y="214.33333333333331" width="64" height="47.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNg-iJ-kMN">
+                                                        <rect key="frame" x="26.999999999999996" y="13.666666666666684" width="10.333333333333332" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="labelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="OperationColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="uNg-iJ-kMN" firstAttribute="centerX" secondItem="Vn7-eI-Dgy" secondAttribute="centerX" id="f5Y-Ci-Ju5"/>
+                                                    <constraint firstItem="uNg-iJ-kMN" firstAttribute="centerY" secondItem="Vn7-eI-Dgy" secondAttribute="centerY" id="yQZ-8Z-KHY"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="tintColor" name="AccentColor"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-mH-5me">
+                                <rect key="frame" x="499" y="324.33333333333331" width="134" height="47.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cu-QE-Wwb">
+                                        <rect key="frame" x="26.999999999999996" y="13.666666666666684" width="10.333333333333332" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="labelColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="CellColor"/>
+                                <constraints>
+                                    <constraint firstItem="2Cu-QE-Wwb" firstAttribute="centerY" secondItem="YfU-mH-5me" secondAttribute="centerY" id="5iF-g3-EzP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YfU-mH-5me" firstAttribute="bottom" secondItem="Dbe-jx-JbZ" secondAttribute="bottom" id="2sB-jN-yeM"/>
+                            <constraint firstItem="c6K-Rl-cdm" firstAttribute="trailing" secondItem="hcw-IO-cdf" secondAttribute="trailing" id="5nY-7m-9dV"/>
+                            <constraint firstItem="2Cu-QE-Wwb" firstAttribute="centerX" secondItem="tTz-X5-9ag" secondAttribute="centerX" id="5zG-Kn-aET"/>
+                            <constraint firstItem="YfU-mH-5me" firstAttribute="top" secondItem="Dbe-jx-JbZ" secondAttribute="top" id="7Ei-iF-ncl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcw-IO-cdf" secondAttribute="trailing" constant="20" id="8Z9-dg-pwz"/>
+                            <constraint firstItem="YfU-mH-5me" firstAttribute="leading" secondItem="Dbe-jx-JbZ" secondAttribute="leading" id="IY3-cP-xs1"/>
+                            <constraint firstItem="c6K-Rl-cdm" firstAttribute="leading" secondItem="hcw-IO-cdf" secondAttribute="leading" id="Kam-kY-cdA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hcw-IO-cdf" secondAttribute="bottom" id="Z6D-HH-Lpy"/>
+                            <constraint firstItem="hcw-IO-cdf" firstAttribute="top" secondItem="c6K-Rl-cdm" secondAttribute="top" constant="50" id="dNc-6u-kMs"/>
+                            <constraint firstItem="hcw-IO-cdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ezs-5n-TR5"/>
+                            <constraint firstItem="YfU-mH-5me" firstAttribute="trailing" secondItem="ww1-kr-bs4" secondAttribute="trailing" id="k7f-dD-Vaf"/>
+                            <constraint firstItem="c6K-Rl-cdm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="ln4-1l-2rt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="76"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GoM-Yu-jL0">
+            <objects>
+                <viewController id="PZG-Yk-gwp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rwh-i2-9Nj">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f93-JX-Mpw">
+                                <rect key="frame" x="69" y="19.666666666666668" width="714" height="46.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" name="mainLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="500" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Auj-rQ-QQ0">
+                                <rect key="frame" x="69" y="76.333333333333343" width="714" height="295.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9YP-78-DXQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tx-59-wu5">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="54.333333333333336"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="(" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkm-97-3e6">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="2ⁿᵈ" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24c-2v-Y6V">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="1/x" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezj-Bx-eeA">
+                                                <rect key="frame" x="0.0" y="181" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="x!" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-Ay-BUK">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Rad" cornerStyle="capsule"/>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-LO-6c3">
+                                        <rect key="frame" x="72.333333333333343" y="0.0" width="62.333333333333343" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjC-KC-BSo">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="54.333333333333336"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title=")" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QY-Xn-zhi">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="x²" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWm-cQ-swh">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="²√x" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aU-gf-P5w">
+                                                <rect key="frame" x="0.0" y="181" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="sin" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIp-Oy-QqW">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="sinh" cornerStyle="capsule"/>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="1qf-wh-jW4">
+                                        <rect key="frame" x="144.66666666666666" y="0.0" width="62.666666666666657" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNU-ya-OXB">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.666666666666664" height="54.333333333333336"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="mc" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKK-J5-TiI">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.666666666666664" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="x³" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiK-9p-Lf6">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.666666666666664" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="³√x" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pU-fQ-LQS">
+                                                <rect key="frame" x="0.0" y="181" width="62.666666666666664" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="cos" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAB-sj-3Ml">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.666666666666664" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="cosh" cornerStyle="capsule"/>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="c2F-ts-uLV">
+                                        <rect key="frame" x="217.33333333333331" y="0.0" width="62.333333333333314" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEq-Pu-LEV">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="54.333333333333336"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="m+" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLv-Mq-6mG">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="xʸ" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3p-Cc-wVV">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ʸ√x" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4M-oD-Grk">
+                                                <rect key="frame" x="0.0" y="181" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="tan" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKS-YZ-dJO">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="tanh" cornerStyle="capsule"/>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="HAa-Pq-H0y">
+                                        <rect key="frame" x="289.66666666666669" y="0.0" width="62.333333333333314" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDn-uA-l7Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="54.333333333333336"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="m-" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5c-7J-oI7">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="eˣ" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syp-OW-ODF">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ln" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmB-1R-bXo">
+                                                <rect key="frame" x="0.0" y="181" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="e" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgQ-NB-7mh">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="π" cornerStyle="capsule"/>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="uPy-U2-mpp">
+                                        <rect key="frame" x="362" y="0.0" width="62.333333333333314" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKQ-fF-Cyp">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="54.333333333333336"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="mr" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jla-Gk-0Mo">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="10ˣ" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL3-dZ-lmP">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="log₁₀" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36T-oa-Z84">
+                                                <rect key="frame" x="0.0" y="181" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="EE" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCe-Z4-ws6">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="ScientificCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Rand" cornerStyle="capsule"/>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lM2-0I-5QL">
+                                        <rect key="frame" x="434.33333333333331" y="0.0" width="62.333333333333314" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s7-bI-Pt9">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="54.333333333333336"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3s7-bI-Pt9" secondAttribute="height" multiplier="1:1" id="HzT-dJ-16z"/>
+                                                </constraints>
+                                                <color key="tintColor" name="SpecialCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="AC" cornerStyle="capsule"/>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="HzT-dJ-16z"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B46-rN-2Cf">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="7" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-Wk-fWH">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="4" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uot-Uj-0fh">
+                                                <rect key="frame" x="0.0" y="181" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="1" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSK-pQ-pw1">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Rad"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aFn-up-Fsu">
+                                        <rect key="frame" x="506.66666666666669" y="0.0" width="62.666666666666686" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1G-bH-3s2">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.666666666666664" height="54.333333333333336"/>
+                                                <color key="tintColor" name="SpecialCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="+/-" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5l-Bu-o5t">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.666666666666664" height="54.333333333333329"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="8" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65c-r5-pzx">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.666666666666664" height="54.333333333333329"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="5" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyF-Fi-ofH">
+                                                <rect key="frame" x="0.0" y="181" width="62.666666666666664" height="54.333333333333343"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="2" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7U-i1-slb">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.666666666666664" height="54.333333333333343"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Rad"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="p3U-UW-uxP">
+                                        <rect key="frame" x="579.33333333333337" y="0.0" width="62.333333333333371" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXS-bD-xRp">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="54.333333333333336"/>
+                                                <color key="tintColor" name="SpecialCellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="%" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwn-BT-c3P">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="9" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1G-ay-MwE">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="6" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibO-F1-XPr">
+                                                <rect key="frame" x="0.0" y="181" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="3" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNT-vd-g8L">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="CellColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="." cornerStyle="capsule"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aqM-fJ-7NC">
+                                        <rect key="frame" x="651.66666666666663" y="0.0" width="62.333333333333371" height="295.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcR-5T-FRw">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="54.333333333333336"/>
+                                                <color key="tintColor" name="OperationColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="÷" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giP-ze-wk5">
+                                                <rect key="frame" x="0.0" y="60.333333333333329" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="OperationColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="×" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6u9-hA-9wD">
+                                                <rect key="frame" x="0.0" y="120.66666666666667" width="62.333333333333336" height="54.333333333333329"/>
+                                                <color key="tintColor" name="OperationColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="−" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fI1-9R-Es9">
+                                                <rect key="frame" x="0.0" y="181" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="OperationColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="capsule"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2Q-jY-7ma">
+                                                <rect key="frame" x="0.0" y="241.3333333333334" width="62.333333333333336" height="54.333333333333343"/>
+                                                <color key="tintColor" name="OperationColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="=" cornerStyle="capsule"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CI-2c-jNi">
+                                <rect key="frame" x="503.33333333333326" y="317.66666666666669" width="135" height="54.333333333333314"/>
+                                <color key="tintColor" name="CellColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="" cornerStyle="capsule"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABF-DD-1I1">
+                                <rect key="frame" x="529.33333333333337" y="334.66666666666669" width="10.333333333333371" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="mainLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GJP-yy-h2P"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GJP-yy-h2P" firstAttribute="trailing" secondItem="Auj-rQ-QQ0" secondAttribute="trailing" constant="10" id="4Vr-6X-R95"/>
+                            <constraint firstItem="ABF-DD-1I1" firstAttribute="centerX" secondItem="Uot-Uj-0fh" secondAttribute="centerX" id="7ES-Kq-c4f"/>
+                            <constraint firstItem="f93-JX-Mpw" firstAttribute="trailing" secondItem="Auj-rQ-QQ0" secondAttribute="trailing" id="90M-Rx-9ZZ"/>
+                            <constraint firstItem="8CI-2c-jNi" firstAttribute="bottom" secondItem="xSK-pQ-pw1" secondAttribute="bottom" id="E1w-Lg-zuJ"/>
+                            <constraint firstItem="8CI-2c-jNi" firstAttribute="trailing" secondItem="v7U-i1-slb" secondAttribute="trailing" id="OFi-rS-jrh"/>
+                            <constraint firstItem="8CI-2c-jNi" firstAttribute="leading" secondItem="xSK-pQ-pw1" secondAttribute="leading" id="Qoc-bG-xS5"/>
+                            <constraint firstItem="f93-JX-Mpw" firstAttribute="leading" secondItem="Auj-rQ-QQ0" secondAttribute="leading" id="d5n-nN-mfk"/>
+                            <constraint firstItem="GJP-yy-h2P" firstAttribute="bottom" secondItem="Auj-rQ-QQ0" secondAttribute="bottom" id="eeF-40-2x0"/>
+                            <constraint firstItem="Auj-rQ-QQ0" firstAttribute="leading" secondItem="GJP-yy-h2P" secondAttribute="leading" constant="10" id="fwV-BM-YEW"/>
+                            <constraint firstItem="Auj-rQ-QQ0" firstAttribute="top" secondItem="f93-JX-Mpw" secondAttribute="bottom" constant="10" id="wmp-Py-iKS"/>
+                            <constraint firstItem="ABF-DD-1I1" firstAttribute="centerY" secondItem="8CI-2c-jNi" secondAttribute="centerY" id="zYR-Dx-ryg"/>
+                            <constraint firstItem="8CI-2c-jNi" firstAttribute="top" secondItem="xSK-pQ-pw1" secondAttribute="top" id="zc6-RS-T5K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjj-Ih-6ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371" y="-737"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CellColor">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OperationColor">
+            <color red="1" green="0.62352941176470589" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ScientificCellColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SpecialCellColor">
+            <color red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainLabelColor">
+            <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
