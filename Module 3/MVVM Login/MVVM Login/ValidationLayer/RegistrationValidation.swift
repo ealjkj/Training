@@ -43,5 +43,4 @@ class RegistrationValidation {
         return ValidationResult(success: true)
     }
     
-    
 }

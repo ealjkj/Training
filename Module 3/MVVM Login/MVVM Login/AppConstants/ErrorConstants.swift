@@ -16,6 +16,8 @@ enum ErrorConstants : String {
     case invalidCredentialsError = "Credentials are invalid"
     case internalServerError = "Internal serverError"
     
+    
+    case invalidRegistrationRequest = "Missing Registration Request"
     case invalidName = "Invalid name"
     case invalidEmail = "Invalid email"
     case invalidPassword = "Invalid password"

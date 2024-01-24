@@ -38,12 +38,20 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerBtnTapped(_ sender: UIButton) {
-        // API call
+        registrationViewModel.signup { data in
+            switch data {
+            case .success(let response):
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: SegueConstants.registerToLogin.rawValue, sender: self)
+                }
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.errorLabel.text = error.localizedDescription
+                    self.errorLabel.isHidden = false
+                }
+            }
+        }
         
-        
-        registrationViewModel.signup()
-        
-//        performSegue(withIdentifier: SegueConstants.registerToLogin.rawValue, sender: self)
     }
 }
 

@@ -12,6 +12,8 @@
 		188F1EAE2B5E597700615ABA /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F1EAD2B5E597700615ABA /* LoginRequest.swift */; };
 		188F1EB02B5E618F00615ABA /* FakeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F1EAF2B5E618F00615ABA /* FakeToken.swift */; };
 		188F1EB22B5E634F00615ABA /* FlowDeciderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F1EB12B5E634F00615ABA /* FlowDeciderViewController.swift */; };
+		18AD81CB2B617E4700E08C4C /* RegistrationMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD81CA2B617E4700E08C4C /* RegistrationMockService.swift */; };
+		18AD81CD2B61C87600E08C4C /* RegistrationValidationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD81CC2B61C87600E08C4C /* RegistrationValidationTest.swift */; };
 		18DE83102B5AE75D000C1F36 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE830F2B5AE75D000C1F36 /* AuthAPI.swift */; };
 		18DE83122B5AE7A1000C1F36 /* RegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE83112B5AE7A1000C1F36 /* RegistrationRequest.swift */; };
 		18DE83142B5AF09A000C1F36 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE83132B5AF09A000C1F36 /* User.swift */; };
@@ -22,7 +24,7 @@
 		18F086DA2B59D5AA00D8D03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F086D82B59D5AA00D8D03A /* Main.storyboard */; };
 		18F086DC2B59D5AB00D8D03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F086DB2B59D5AB00D8D03A /* Assets.xcassets */; };
 		18F086DF2B59D5AB00D8D03A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F086DD2B59D5AB00D8D03A /* LaunchScreen.storyboard */; };
-		18F086EA2B59D5AB00D8D03A /* MVVM_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F086E92B59D5AB00D8D03A /* MVVM_LoginTests.swift */; };
+		18F086EA2B59D5AB00D8D03A /* RegistrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F086E92B59D5AB00D8D03A /* RegistrationTest.swift */; };
 		18F086F42B59D5AB00D8D03A /* MVVM_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F086F32B59D5AB00D8D03A /* MVVM_LoginUITests.swift */; };
 		18F086F62B59D5AB00D8D03A /* MVVM_LoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F086F52B59D5AB00D8D03A /* MVVM_LoginUITestsLaunchTests.swift */; };
 		18F087042B59E9DF00D8D03A /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F087032B59E9DF00D8D03A /* SegueConstants.swift */; };
@@ -62,6 +64,8 @@
 		188F1EAD2B5E597700615ABA /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		188F1EAF2B5E618F00615ABA /* FakeToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeToken.swift; sourceTree = "<group>"; };
 		188F1EB12B5E634F00615ABA /* FlowDeciderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDeciderViewController.swift; sourceTree = "<group>"; };
+		18AD81CA2B617E4700E08C4C /* RegistrationMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationMockService.swift; sourceTree = "<group>"; };
+		18AD81CC2B61C87600E08C4C /* RegistrationValidationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationValidationTest.swift; sourceTree = "<group>"; };
 		18DE830F2B5AE75D000C1F36 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		18DE83112B5AE7A1000C1F36 /* RegistrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequest.swift; sourceTree = "<group>"; };
 		18DE83132B5AF09A000C1F36 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -75,7 +79,7 @@
 		18F086DE2B59D5AB00D8D03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F086E02B59D5AB00D8D03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18F086E52B59D5AB00D8D03A /* MVVM LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM LoginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18F086E92B59D5AB00D8D03A /* MVVM_LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_LoginTests.swift; sourceTree = "<group>"; };
+		18F086E92B59D5AB00D8D03A /* RegistrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTest.swift; sourceTree = "<group>"; };
 		18F086EF2B59D5AB00D8D03A /* MVVM LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM LoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F086F32B59D5AB00D8D03A /* MVVM_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_LoginUITests.swift; sourceTree = "<group>"; };
 		18F086F52B59D5AB00D8D03A /* MVVM_LoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_LoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -118,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18AD81C92B617E2E00E08C4C /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				18AD81CA2B617E4700E08C4C /* RegistrationMockService.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
 		18F086C62B59D5AA00D8D03A = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 		18F086D12B59D5AA00D8D03A /* MVVM Login */ = {
 			isa = PBXGroup;
 			children = (
+				18AD81C92B617E2E00E08C4C /* MockService */,
 				18F0870D2B59F95200D8D03A /* AppDelegates+Assets */,
 				18F087022B59E9C400D8D03A /* AppConstants */,
 				18F087142B59FB8200D8D03A /* ValidationLayer */,
@@ -159,7 +172,8 @@
 		18F086E82B59D5AB00D8D03A /* MVVM LoginTests */ = {
 			isa = PBXGroup;
 			children = (
-				18F086E92B59D5AB00D8D03A /* MVVM_LoginTests.swift */,
+				18AD81CC2B61C87600E08C4C /* RegistrationValidationTest.swift */,
+				18F086E92B59D5AB00D8D03A /* RegistrationTest.swift */,
 			);
 			path = "MVVM LoginTests";
 			sourceTree = "<group>";
@@ -411,6 +425,7 @@
 				18DE83102B5AE75D000C1F36 /* AuthAPI.swift in Sources */,
 				18F087192B59FCFF00D8D03A /* RegistrationService.swift in Sources */,
 				188F1EB22B5E634F00615ABA /* FlowDeciderViewController.swift in Sources */,
+				18AD81CB2B617E4700E08C4C /* RegistrationMockService.swift in Sources */,
 				18F087162B59FBA700D8D03A /* RegistrationValidation.swift in Sources */,
 				18F087112B59FA6800D8D03A /* RegexConstants.swift in Sources */,
 				18DE83162B5B53B4000C1F36 /* APIError.swift in Sources */,
@@ -432,7 +447,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F086EA2B59D5AB00D8D03A /* MVVM_LoginTests.swift in Sources */,
+				18AD81CD2B61C87600E08C4C /* RegistrationValidationTest.swift in Sources */,
+				18F086EA2B59D5AB00D8D03A /* RegistrationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

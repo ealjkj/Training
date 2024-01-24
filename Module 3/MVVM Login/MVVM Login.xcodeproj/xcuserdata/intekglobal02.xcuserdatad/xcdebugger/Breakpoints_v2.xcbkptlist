@@ -3,4 +3,214 @@
    uuid = "8C831BC5-A3AE-4AAB-BEC5-3CE45380C50F"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0F8E469-47AD-4164-BA8D-26396D885AF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM LoginUITests/MVVM_LoginUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "test_registrationFlow()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B9BFF16-DA47-4607-81EC-55D201E22937"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM LoginUITests/MVVM_LoginUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "test_registrationFlow()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FE891CC-0089-43E6-99F3-4993F21F912D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM LoginUITests/MVVM_LoginUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "test_registrationFlow()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4FE891CC-0089-43E6-99F3-4993F21F912D - b4b481cfbcae6cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_LoginUITests.MVVM_LoginUITests.test_registrationFlow() throws -&gt; ()"
+                  moduleName = "MVVM LoginUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intekglobal02/Documents/interview-practice/Training/Module%203/MVVM%20Login/MVVM%20LoginUITests/MVVM_LoginUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "2172">
+               </Location>
+               <Location
+                  uuid = "4FE891CC-0089-43E6-99F3-4993F21F912D - b4b481cfbcae70f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_LoginUITests.MVVM_LoginUITests.test_registrationFlow() throws -&gt; ()"
+                  moduleName = "MVVM LoginUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intekglobal02/Documents/interview-practice/Training/Module%203/MVVM%20Login/MVVM%20LoginUITests/MVVM_LoginUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "2152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F3247EB-7961-4823-BE3A-3FD4E277AC72"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM LoginTests/RegistrationTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "test_success_registration()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F3247EB-7961-4823-BE3A-3FD4E277AC72 - 1aef7d4ee846333e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_LoginTests.MVVM_LoginTests.test_success_registration() -&gt; ()"
+                  moduleName = "MVVM LoginTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intekglobal02/Documents/interview-practice/Training/Module%203/MVVM%20Login/MVVM%20LoginTests/RegistrationTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "7F3247EB-7961-4823-BE3A-3FD4E277AC72 - 8f9b550e745242f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;MVVM_Login.RegistrationResponse, MVVM_Login.APIError&gt;) -&gt; () in MVVM_LoginTests.MVVM_LoginTests.test_success_registration() -&gt; ()"
+                  moduleName = "MVVM LoginTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intekglobal02/Documents/interview-practice/Training/Module%203/MVVM%20Login/MVVM%20LoginTests/RegistrationTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45D3E4D9-7F0C-440C-B98E-D9FB4EE2492E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM LoginTests/RegistrationTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "test_success_registration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "344B3B7D-3505-4713-9841-DB7DE009541F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM LoginTests/RegistrationTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "test_success_registration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB3AA527-7118-41B5-8AEA-22241A892F09"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM LoginTests/RegistrationTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "test_success_registration()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB3AA527-7118-41B5-8AEA-22241A892F09 - 1aef7d4ee846333e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_LoginTests.MVVM_LoginTests.test_success_registration() -&gt; ()"
+                  moduleName = "MVVM LoginTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intekglobal02/Documents/interview-practice/Training/Module%203/MVVM%20Login/MVVM%20LoginTests/RegistrationTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "DB3AA527-7118-41B5-8AEA-22241A892F09 - 8f9b550e745242f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;MVVM_Login.RegistrationResponse, MVVM_Login.APIError&gt;) -&gt; () in MVVM_LoginTests.MVVM_LoginTests.test_success_registration() -&gt; ()"
+                  moduleName = "MVVM LoginTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intekglobal02/Documents/interview-practice/Training/Module%203/MVVM%20Login/MVVM%20LoginTests/RegistrationTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

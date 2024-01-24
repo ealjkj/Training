@@ -13,19 +13,15 @@ struct RegistrationResponse : Decodable {
 }
 
 class RegistrationService {
-    var registrationRequest: RegistrationRequest?
     let httpUtility: HttpUtility
     
     init(httpUtility: HttpUtility) {
         self.httpUtility = httpUtility
     }
     
-    func signup(completion: @escaping (_ data: Result<RegistrationResponse, APIError>) -> Void) {
-        guard let registrationRequest = registrationRequest else {return}
+    func signup(registrationRequest: RegistrationRequest, completion: @escaping (_ data: Result<RegistrationResponse, APIError>) -> Void) {
         
         httpUtility.request(method: AuthAPI.Methods.POST, body: registrationRequest, endpoint: AuthAPI.Endpoints.signup) { (res: RegistrationResponse?, error: Error?) -> Void in
-            
-            print(res)
             
             if  res?.success != nil {
                 completion(Result.success(res!))

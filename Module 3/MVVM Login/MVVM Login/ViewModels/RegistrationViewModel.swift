@@ -8,8 +8,6 @@
 import Foundation
 
 protocol RegistrationViewModelDelegate : AnyObject {
-    func apiResponseStatus(isSuccessful: Bool, registrationResponse: RegistrationResponse?, error: APIError?) 
-    
     func validationResult(result: ValidationResult)
 }
 
@@ -31,16 +29,18 @@ class RegistrationViewModel : ObservableObject {
     }
     
     
-    func signup() {
-        registrationService.registrationRequest = registrationRequest
-        registrationService.signup() {data in 
+    func signup(completion: @escaping (_ data: Result<RegistrationResponse, APIError>) -> Void) {
+        guard let registrationRequest else {  completion(.failure(APIError(localizedDescription: ErrorConstants.invalidRegistrationRequest.rawValue)))
+            return
+        }
+        
+        registrationService.signup(registrationRequest: registrationRequest) {data in
             switch data {
             case .success(let response):
-                self.registrationDelegate?.apiResponseStatus(isSuccessful: true, registrationResponse: response, error: nil)
+                completion(.success(response))
                 
             case .failure(let error):
-                print("vm error desc", error.localizedDescription)
-                self.registrationDelegate?.apiResponseStatus(isSuccessful: false, registrationResponse: nil, error: error)
+                completion(.failure(error))
             }
         }
     }
