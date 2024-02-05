@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="22G313" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDBankUser" representedClassName=".CDBankUser" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="cardsCascade" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDCreditCards" inverseName="holderCascade" inverseEntity="CDCreditCards"/>
+        <relationship name="cardsDeny" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="CDCreditCards" inverseName="holderDeny" inverseEntity="CDCreditCards"/>
+        <relationship name="cardsNoAction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDCreditCards" inverseName="holderNoAction" inverseEntity="CDCreditCards"/>
+        <relationship name="cardsNullify" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDCreditCards" inverseName="holderNullify" inverseEntity="CDCreditCards"/>
+    </entity>
+    <entity name="CDCreditCards" representedClassName=".CDCreditCards" syncable="YES">
+        <attribute name="cardNumber" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="holderCascade" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDBankUser" inverseName="cardsCascade" inverseEntity="CDBankUser"/>
+        <relationship name="holderDeny" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDBankUser" inverseName="cardsDeny" inverseEntity="CDBankUser"/>
+        <relationship name="holderNoAction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDBankUser" inverseName="cardsNoAction" inverseEntity="CDBankUser"/>
+        <relationship name="holderNullify" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDBankUser" inverseName="cardsNullify" inverseEntity="CDBankUser"/>
+    </entity>
+</model>

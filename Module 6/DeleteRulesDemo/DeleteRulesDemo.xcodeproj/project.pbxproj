@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B6EFD42B64260C000FDE4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6EFD32B64260C000FDE4D /* AppDelegate.swift */; };
+		18B6EFD62B64260C000FDE4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6EFD52B64260C000FDE4D /* SceneDelegate.swift */; };
+		18B6EFD82B64260C000FDE4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6EFD72B64260C000FDE4D /* ViewController.swift */; };
+		18B6EFDB2B64260C000FDE4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B6EFD92B64260C000FDE4D /* Main.storyboard */; };
+		18B6EFDE2B64260C000FDE4D /* DeleteRulesDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18B6EFDC2B64260C000FDE4D /* DeleteRulesDemo.xcdatamodeld */; };
+		18B6EFE02B64260E000FDE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B6EFDF2B64260E000FDE4D /* Assets.xcassets */; };
+		18B6EFE32B64260E000FDE4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B6EFE12B64260E000FDE4D /* LaunchScreen.storyboard */; };
+		18B6EFEE2B64260E000FDE4D /* DeleteRulesDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6EFED2B64260E000FDE4D /* DeleteRulesDemoTests.swift */; };
+		18B6EFF82B64260E000FDE4D /* DeleteRulesDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6EFF72B64260E000FDE4D /* DeleteRulesDemoUITests.swift */; };
+		18B6EFFA2B64260E000FDE4D /* DeleteRulesDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6EFF92B64260E000FDE4D /* DeleteRulesDemoUITestsLaunchTests.swift */; };
+		18B6F00B2B64304B000FDE4D /* CDBankUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6F0072B64304B000FDE4D /* CDBankUser+CoreDataClass.swift */; };
+		18B6F00C2B64304B000FDE4D /* CDBankUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6F0082B64304B000FDE4D /* CDBankUser+CoreDataProperties.swift */; };
+		18B6F00D2B64304B000FDE4D /* CDCreditCards+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6F0092B64304B000FDE4D /* CDCreditCards+CoreDataClass.swift */; };
+		18B6F00E2B64304B000FDE4D /* CDCreditCards+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6F00A2B64304B000FDE4D /* CDCreditCards+CoreDataProperties.swift */; };
+		18B6F0102B643A13000FDE4D /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6F00F2B643A13000FDE4D /* PersistentStorage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B6EFEA2B64260E000FDE4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B6EFC82B64260C000FDE4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B6EFCF2B64260C000FDE4D;
+			remoteInfo = DeleteRulesDemo;
+		};
+		18B6EFF42B64260E000FDE4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B6EFC82B64260C000FDE4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B6EFCF2B64260C000FDE4D;
+			remoteInfo = DeleteRulesDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B6EFD02B64260C000FDE4D /* DeleteRulesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeleteRulesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B6EFD32B64260C000FDE4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18B6EFD52B64260C000FDE4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18B6EFD72B64260C000FDE4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18B6EFDA2B64260C000FDE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B6EFDD2B64260C000FDE4D /* DeleteRulesDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeleteRulesDemo.xcdatamodel; sourceTree = "<group>"; };
+		18B6EFDF2B64260E000FDE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B6EFE22B64260E000FDE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B6EFE42B64260E000FDE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B6EFE92B64260E000FDE4D /* DeleteRulesDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleteRulesDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B6EFED2B64260E000FDE4D /* DeleteRulesDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRulesDemoTests.swift; sourceTree = "<group>"; };
+		18B6EFF32B64260E000FDE4D /* DeleteRulesDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleteRulesDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B6EFF72B64260E000FDE4D /* DeleteRulesDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRulesDemoUITests.swift; sourceTree = "<group>"; };
+		18B6EFF92B64260E000FDE4D /* DeleteRulesDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRulesDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18B6F0072B64304B000FDE4D /* CDBankUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDBankUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18B6F0082B64304B000FDE4D /* CDBankUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDBankUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18B6F0092B64304B000FDE4D /* CDCreditCards+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCreditCards+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18B6F00A2B64304B000FDE4D /* CDCreditCards+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCreditCards+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18B6F00F2B643A13000FDE4D /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B6EFCD2B64260C000FDE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6EFE62B64260E000FDE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6EFF02B64260E000FDE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B6EFC72B64260C000FDE4D = {
+			isa = PBXGroup;
+			children = (
+				18B6EFD22B64260C000FDE4D /* DeleteRulesDemo */,
+				18B6EFEC2B64260E000FDE4D /* DeleteRulesDemoTests */,
+				18B6EFF62B64260E000FDE4D /* DeleteRulesDemoUITests */,
+				18B6EFD12B64260C000FDE4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B6EFD12B64260C000FDE4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B6EFD02B64260C000FDE4D /* DeleteRulesDemo.app */,
+				18B6EFE92B64260E000FDE4D /* DeleteRulesDemoTests.xctest */,
+				18B6EFF32B64260E000FDE4D /* DeleteRulesDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B6EFD22B64260C000FDE4D /* DeleteRulesDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18B6F0172B6486CB000FDE4D /* Views */,
+				18B6F0162B6486AF000FDE4D /* AppDelegate+Assets */,
+				18B6F0152B648593000FDE4D /* Controllers */,
+				18B6F0062B642FF6000FDE4D /* CoreDataUtils */,
+				18B6EFE42B64260E000FDE4D /* Info.plist */,
+				18B6EFDC2B64260C000FDE4D /* DeleteRulesDemo.xcdatamodeld */,
+			);
+			path = DeleteRulesDemo;
+			sourceTree = "<group>";
+		};
+		18B6EFEC2B64260E000FDE4D /* DeleteRulesDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B6EFED2B64260E000FDE4D /* DeleteRulesDemoTests.swift */,
+			);
+			path = DeleteRulesDemoTests;
+			sourceTree = "<group>";
+		};
+		18B6EFF62B64260E000FDE4D /* DeleteRulesDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B6EFF72B64260E000FDE4D /* DeleteRulesDemoUITests.swift */,
+				18B6EFF92B64260E000FDE4D /* DeleteRulesDemoUITestsLaunchTests.swift */,
+			);
+			path = DeleteRulesDemoUITests;
+			sourceTree = "<group>";
+		};
+		18B6F0062B642FF6000FDE4D /* CoreDataUtils */ = {
+			isa = PBXGroup;
+			children = (
+				18B6F00F2B643A13000FDE4D /* PersistentStorage.swift */,
+				18B6F0072B64304B000FDE4D /* CDBankUser+CoreDataClass.swift */,
+				18B6F0082B64304B000FDE4D /* CDBankUser+CoreDataProperties.swift */,
+				18B6F0092B64304B000FDE4D /* CDCreditCards+CoreDataClass.swift */,
+				18B6F00A2B64304B000FDE4D /* CDCreditCards+CoreDataProperties.swift */,
+			);
+			path = CoreDataUtils;
+			sourceTree = "<group>";
+		};
+		18B6F0152B648593000FDE4D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B6EFD72B64260C000FDE4D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18B6F0162B6486AF000FDE4D /* AppDelegate+Assets */ = {
+			isa = PBXGroup;
+			children = (
+				18B6EFD32B64260C000FDE4D /* AppDelegate.swift */,
+				18B6EFD52B64260C000FDE4D /* SceneDelegate.swift */,
+				18B6EFDF2B64260E000FDE4D /* Assets.xcassets */,
+			);
+			path = "AppDelegate+Assets";
+			sourceTree = "<group>";
+		};
+		18B6F0172B6486CB000FDE4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18B6EFD92B64260C000FDE4D /* Main.storyboard */,
+				18B6EFE12B64260E000FDE4D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B6EFCF2B64260C000FDE4D /* DeleteRulesDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B6EFFD2B64260E000FDE4D /* Build configuration list for PBXNativeTarget "DeleteRulesDemo" */;
+			buildPhases = (
+				18B6EFCC2B64260C000FDE4D /* Sources */,
+				18B6EFCD2B64260C000FDE4D /* Frameworks */,
+				18B6EFCE2B64260C000FDE4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeleteRulesDemo;
+			productName = DeleteRulesDemo;
+			productReference = 18B6EFD02B64260C000FDE4D /* DeleteRulesDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B6EFE82B64260E000FDE4D /* DeleteRulesDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B6F0002B64260E000FDE4D /* Build configuration list for PBXNativeTarget "DeleteRulesDemoTests" */;
+			buildPhases = (
+				18B6EFE52B64260E000FDE4D /* Sources */,
+				18B6EFE62B64260E000FDE4D /* Frameworks */,
+				18B6EFE72B64260E000FDE4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B6EFEB2B64260E000FDE4D /* PBXTargetDependency */,
+			);
+			name = DeleteRulesDemoTests;
+			productName = DeleteRulesDemoTests;
+			productReference = 18B6EFE92B64260E000FDE4D /* DeleteRulesDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B6EFF22B64260E000FDE4D /* DeleteRulesDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B6F0032B64260E000FDE4D /* Build configuration list for PBXNativeTarget "DeleteRulesDemoUITests" */;
+			buildPhases = (
+				18B6EFEF2B64260E000FDE4D /* Sources */,
+				18B6EFF02B64260E000FDE4D /* Frameworks */,
+				18B6EFF12B64260E000FDE4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B6EFF52B64260E000FDE4D /* PBXTargetDependency */,
+			);
+			name = DeleteRulesDemoUITests;
+			productName = DeleteRulesDemoUITests;
+			productReference = 18B6EFF32B64260E000FDE4D /* DeleteRulesDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B6EFC82B64260C000FDE4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					18B6EFCF2B64260C000FDE4D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					18B6EFE82B64260E000FDE4D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 18B6EFCF2B64260C000FDE4D;
+					};
+					18B6EFF22B64260E000FDE4D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 18B6EFCF2B64260C000FDE4D;
+					};
+				};
+			};
+			buildConfigurationList = 18B6EFCB2B64260C000FDE4D /* Build configuration list for PBXProject "DeleteRulesDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B6EFC72B64260C000FDE4D;
+			productRefGroup = 18B6EFD12B64260C000FDE4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B6EFCF2B64260C000FDE4D /* DeleteRulesDemo */,
+				18B6EFE82B64260E000FDE4D /* DeleteRulesDemoTests */,
+				18B6EFF22B64260E000FDE4D /* DeleteRulesDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B6EFCE2B64260C000FDE4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6EFE32B64260E000FDE4D /* LaunchScreen.storyboard in Resources */,
+				18B6EFE02B64260E000FDE4D /* Assets.xcassets in Resources */,
+				18B6EFDB2B64260C000FDE4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6EFE72B64260E000FDE4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6EFF12B64260E000FDE4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B6EFCC2B64260C000FDE4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6EFD82B64260C000FDE4D /* ViewController.swift in Sources */,
+				18B6F00C2B64304B000FDE4D /* CDBankUser+CoreDataProperties.swift in Sources */,
+				18B6EFD42B64260C000FDE4D /* AppDelegate.swift in Sources */,
+				18B6F0102B643A13000FDE4D /* PersistentStorage.swift in Sources */,
+				18B6F00E2B64304B000FDE4D /* CDCreditCards+CoreDataProperties.swift in Sources */,
+				18B6EFD62B64260C000FDE4D /* SceneDelegate.swift in Sources */,
+				18B6F00D2B64304B000FDE4D /* CDCreditCards+CoreDataClass.swift in Sources */,
+				18B6F00B2B64304B000FDE4D /* CDBankUser+CoreDataClass.swift in Sources */,
+				18B6EFDE2B64260C000FDE4D /* DeleteRulesDemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6EFE52B64260E000FDE4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6EFEE2B64260E000FDE4D /* DeleteRulesDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6EFEF2B64260E000FDE4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6EFFA2B64260E000FDE4D /* DeleteRulesDemoUITestsLaunchTests.swift in Sources */,
+				18B6EFF82B64260E000FDE4D /* DeleteRulesDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B6EFEB2B64260E000FDE4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B6EFCF2B64260C000FDE4D /* DeleteRulesDemo */;
+			targetProxy = 18B6EFEA2B64260E000FDE4D /* PBXContainerItemProxy */;
+		};
+		18B6EFF52B64260E000FDE4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B6EFCF2B64260C000FDE4D /* DeleteRulesDemo */;
+			targetProxy = 18B6EFF42B64260E000FDE4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B6EFD92B64260C000FDE4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B6EFDA2B64260C000FDE4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B6EFE12B64260E000FDE4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B6EFE22B64260E000FDE4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B6EFFB2B64260E000FDE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B6EFFC2B64260E000FDE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B6EFFE2B64260E000FDE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5C6D3Q9JR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeleteRulesDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.DeleteRulesDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B6EFFF2B64260E000FDE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5C6D3Q9JR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeleteRulesDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.DeleteRulesDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18B6F0012B64260E000FDE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.DeleteRulesDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeleteRulesDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeleteRulesDemo";
+			};
+			name = Debug;
+		};
+		18B6F0022B64260E000FDE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.DeleteRulesDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeleteRulesDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeleteRulesDemo";
+			};
+			name = Release;
+		};
+		18B6F0042B64260E000FDE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.DeleteRulesDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeleteRulesDemo;
+			};
+			name = Debug;
+		};
+		18B6F0052B64260E000FDE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.DeleteRulesDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeleteRulesDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B6EFCB2B64260C000FDE4D /* Build configuration list for PBXProject "DeleteRulesDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B6EFFB2B64260E000FDE4D /* Debug */,
+				18B6EFFC2B64260E000FDE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B6EFFD2B64260E000FDE4D /* Build configuration list for PBXNativeTarget "DeleteRulesDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B6EFFE2B64260E000FDE4D /* Debug */,
+				18B6EFFF2B64260E000FDE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B6F0002B64260E000FDE4D /* Build configuration list for PBXNativeTarget "DeleteRulesDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B6F0012B64260E000FDE4D /* Debug */,
+				18B6F0022B64260E000FDE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B6F0032B64260E000FDE4D /* Build configuration list for PBXNativeTarget "DeleteRulesDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B6F0042B64260E000FDE4D /* Debug */,
+				18B6F0052B64260E000FDE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18B6EFDC2B64260C000FDE4D /* DeleteRulesDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18B6EFDD2B64260C000FDE4D /* DeleteRulesDemo.xcdatamodel */,
+			);
+			currentVersion = 18B6EFDD2B64260C000FDE4D /* DeleteRulesDemo.xcdatamodel */;
+			path = DeleteRulesDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18B6EFC82B64260C000FDE4D /* Project object */;
+}
